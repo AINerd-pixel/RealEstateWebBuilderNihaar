@@ -6,7 +6,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Showcase from "./components/Showcase";
-import Stats from "./components/Stats";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
@@ -19,7 +18,6 @@ export default function App() {
       <main>
         <Hero />
         <Showcase />
-        <Stats />
         <Services />
         <Portfolio />
         <Contact />
