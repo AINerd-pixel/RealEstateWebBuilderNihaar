@@ -16,7 +16,7 @@ No test framework is configured.
 
 ## Environment
 
-Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY`. Vite injects it at build time via `process.env.GEMINI_API_KEY` (see `vite.config.ts` — loaded from the root `.` directory, not `./`).
+No environment variables required to run the dev server.
 
 ## Architecture
 
@@ -27,8 +27,6 @@ Single-page React app with no routing. `App.tsx` composes all sections in order:
 **Fonts:** Inter (sans) and Noto Serif (serif) loaded from Google Fonts in `src/index.css`. Use `font-serif` for display/headline text, `font-sans` for body.
 
 **Animations:** `motion/react` (not `framer-motion`) is used for entrance animations. Import from `"motion/react"`.
-
-**AI integration:** `@google/genai` SDK is available but not yet wired into any component — the API key is injected via Vite's `define` block in `vite.config.ts`.
 
 **Express backend:** `express` and `dotenv` are listed as dependencies but no server file exists yet — the backend is unimplemented.
 

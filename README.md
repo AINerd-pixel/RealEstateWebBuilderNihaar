@@ -1,6 +1,6 @@
 # Nihaar Real Estate Website
 
-A modern, AI-powered real estate marketing website built with React, TypeScript, and Tailwind CSS. The site features animated sections for showcasing services, portfolio, stats, and a contact form, with a Gemini AI integration via the Google GenAI SDK.
+A modern luxury real estate marketing website built with React, TypeScript, and Tailwind CSS. Features animated sections for showcasing services, portfolio, stats, and a contact form.
 
 ## Tech Stack
 
@@ -10,7 +10,6 @@ A modern, AI-powered real estate marketing website built with React, TypeScript,
 - **Tailwind CSS v4** — styling
 - **Motion** — animations
 - **Lucide React** — icons
-- **Google GenAI SDK** — Gemini AI integration
 - **Express** — lightweight backend server
 
 ## Project Structure
@@ -23,6 +22,7 @@ src/
 └── components/
     ├── Navbar.tsx        # Top navigation
     ├── Hero.tsx          # Landing hero section
+    ├── Showcase.tsx      # Device mockup showcase
     ├── Stats.tsx         # Key metrics / statistics
     ├── Services.tsx      # Services offered
     ├── Portfolio.tsx     # Property portfolio showcase
@@ -39,12 +39,7 @@ src/
    npm install
    ```
 
-2. Create a `.env.local` file and add your Gemini API key:
-   ```
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
-3. Start the development server:
+2. Start the development server:
    ```bash
    npm run dev
    ```
