@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -17,9 +17,7 @@ export default function Contact() {
 
             <div className="space-y-16">
               {[
-                { label: "Email Us", value: "hello@ngdesigns.com", icon: Mail },
-                { label: "Call Us", value: "+1 (212) 555-ARCH", icon: Phone },
-                { label: "Visit Us", value: "745 Fifth Avenue, New York, NY", icon: MapPin },
+                { label: "Email Us", value: "nihaargala12@gmail.com", icon: Mail },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-10 group">
                   <div className="w-12 h-12 flex items-center justify-center border border-white/10 text-primary/60 group-hover:border-primary group-hover:text-primary transition-all duration-700">
