@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -18,16 +18,17 @@ export default function Contact() {
             <div className="space-y-16">
               {[
                 { label: "Email Us", value: "nihaargala12@gmail.com", icon: Mail },
+                { label: "Call Us", value: "571-426-7144", icon: Phone },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-10 group">
-                  <div className="w-12 h-12 flex items-center justify-center border border-white/10 text-primary/60 group-hover:border-primary group-hover:text-primary transition-all duration-700">
-                    <item.icon size={20} strokeWidth={1} />
+                  <div className="w-16 h-16 flex items-center justify-center border border-white/10 text-primary/60 group-hover:border-primary group-hover:text-primary transition-all duration-700">
+                    <item.icon size={28} strokeWidth={1} />
                   </div>
                   <div>
-                    <p className="text-[9px] font-semibold uppercase tracking-widest-luxury text-primary mb-2">
+                    <p className="text-[9px] font-semibold uppercase tracking-widest-luxury text-primary mb-3">
                       {item.label}
                     </p>
-                    <p className="text-2xl text-on-surface font-serif italic opacity-80 group-hover:opacity-100 transition-opacity">
+                    <p className="text-3xl md:text-4xl text-on-surface font-serif italic opacity-80 group-hover:opacity-100 transition-opacity">
                       {item.value}
                     </p>
                   </div>
