@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
+import Particles from "./Particles";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <Particles />
+
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -14,9 +17,24 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-6xl">
-        {/* Glow Effect */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/10 blur-[120px] rounded-full -z-10" />
-        
+        {/* Animated glow behind heading */}
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.15, 0.35, 0.15],
+          }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-primary rounded-full blur-[100px] -z-10"
+        />
+        <motion.div
+          animate={{
+            scale: [1.1, 0.9, 1.1],
+            opacity: [0.08, 0.2, 0.08],
+          }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-primary rounded-full blur-[140px] -z-10"
+        />
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

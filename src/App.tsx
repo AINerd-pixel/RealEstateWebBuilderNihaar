@@ -5,6 +5,7 @@
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Showcase from "./components/Showcase";
 import Stats from "./components/Stats";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
@@ -17,6 +18,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Showcase />
         <Stats />
         <Services />
         <Portfolio />

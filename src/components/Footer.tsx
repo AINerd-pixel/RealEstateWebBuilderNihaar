@@ -11,7 +11,7 @@ export default function Footer() {
               NG <span className="text-primary italic">Designs</span>
             </h2>
             <p className="text-[10px] font-semibold uppercase tracking-ultra-luxury text-on-surface/30">
-              Established MMXXIV • NG Designs
+              Established MMXXVI • NG Designs
             </p>
           </div>
 
